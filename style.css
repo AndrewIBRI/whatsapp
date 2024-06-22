@@ -31,12 +31,18 @@
   cursor: pointer;
 }
 
+.chat-list-item .chat-details {
+  filter: blur(5px);
+}
 .chat-list-item:hover {
   background: hsl(0, 0%, 95%);
 }
 
 .chat-list-item:active {
   background: hsl(0, 0%, 85%);
+}
+.chat-list-item .name {
+  filter: blur(5px);
 }
 
 .chat-list-item.active {
@@ -47,7 +53,9 @@
   width: 60%;
 }
 
-.chat-list-item.unread .name,
+.chat-list-item.unread .name {
+  filter: blur(5px);
+}
 .chat-list-item.unread .last-message {
   font-weight: bold;
 }
@@ -57,7 +65,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  filter: blur(5px);
 }
 
 #message-area {
